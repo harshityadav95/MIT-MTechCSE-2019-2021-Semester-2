@@ -3,5 +3,9 @@ View All Database
 or 
 >> select * from global_name;
 
+>>alter table section rename column semseter to semester;
+
+
+
 
 
