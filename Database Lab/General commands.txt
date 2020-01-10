@@ -1,0 +1,7 @@
+View All Database  
+>> select name from v$database;
+or 
+>> select * from global_name;
+
+
+
