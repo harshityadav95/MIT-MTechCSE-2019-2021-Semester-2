@@ -10,6 +10,7 @@ while i<len(b):
     else:
         odd.append(b[i])
     i=i+1
-ver=''.join(even+odd)
+temp=even+odd
+ver=''.join(temp)
 print(ver)
 
