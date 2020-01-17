@@ -5,6 +5,8 @@ or
 
 >>alter table section rename column semseter to semester;
 
+>>set linesize 300;
+
 
 
 
