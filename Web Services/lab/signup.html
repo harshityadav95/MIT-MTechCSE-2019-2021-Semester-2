@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function validate()
+        {
+            var flag = false;
+            var name = document.getElementById('txtname').value;
+            var password = document.getElementById('txtpassword').value;
+            var confirmpassword = document.getElementById('txtconfirmpassword').value;
+            if (name !== '' && password == confirmpassword) {
+                flag = true;
+            }
+            else
+            {
+                alert('Password does not match');
+            }
+            return flag;
+        }
+    </script>
+</head>
+<body>
+    <h6><a href="home.html">Home</a></h6>
+    <form action="signin.html" onsubmit="return validate();">
+        <label>Name</label>
+        <input type="text" placeholder="Enter Name" id="txtname"  />
+        </br>
+        <label>Password</label>
+        <input type="password" id="txtpassword"/>
+        </br >
+        <label>Confirm Password</label>
+        <input type="password" id="txtconfirmpassword"/>
+        </br>
+        <input type="submit" value="submit">Signup
+        <button type="reset">Cancel</button>
+    </form>
+
+</body>
+</html>

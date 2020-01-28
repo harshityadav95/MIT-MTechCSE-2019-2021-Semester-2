@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs ="http://www.w3.org/2001/XMLSchema"
+           targetNamespace ="www.manipal.edu/Students" >
+  <xs:element name="Students">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Student" maxOccurs = "unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string" form="qualified"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer"/>
+            <xs:attribute name="roll_no" type="xs:integer" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
