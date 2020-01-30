@@ -29,7 +29,6 @@
   <year>2003</year>
   <price>39.95</price>
 </book>
-
 </bookstore>
 
 /bookstore/book[@category="web"]/title
@@ -53,11 +52,3 @@
 Find the Category of the book which has more than 2 authors
 Find the category of books whose title does not have lang attribute
 //book/title[not(@lang)]/../@category
-
-
-
-
-
-
-
-
