@@ -33,17 +33,12 @@
 </bookstore>
 
 /bookstore/book[@category="web"]/title
-
 /bookstore/book[@category="web"]/title|author
-
 //book[price>30]/title
 
 //book[price>40 and year=2003]/title
-
 //book[last()]/title
-
 //book/title[last()]
-
 //book[position()<3]/title
 
 <book category="cooking">
@@ -54,9 +49,7 @@
 </book>
 
 //book/title[not(@lang)]
-
 //book[price>30]/@category
-
 Find the Category of the book which has more than 2 authors
 Find the category of books whose title does not have lang attribute
 //book/title[not(@lang)]/../@category
