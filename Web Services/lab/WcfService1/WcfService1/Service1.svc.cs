@@ -15,6 +15,9 @@ namespace WcfService1
         public GetResultResponse GetResult(string registerNo, int semester, string term)
         {
             GetResultResponse response = new GetResultResponse();
+            response.registerNo = registerNo;
+            response.name = "ABC";
+            response.grade = "A+";
             return response;
         }
     }
