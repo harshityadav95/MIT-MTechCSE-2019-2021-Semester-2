@@ -1,6 +1,7 @@
-C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
 C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\WcfService1\WcfService1\bin\WcfService1.dll.config
 C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\WcfService1\WcfService1\bin\WcfService1.dll
 C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\WcfService1\WcfService1\bin\WcfService1.pdb
 C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\WcfService1\WcfService1\obj\Debug\WcfService1.dll
 C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\WcfService1\WcfService1\obj\Debug\WcfService1.csprojAssemblyReference.cache
+C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\WcfService1\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache

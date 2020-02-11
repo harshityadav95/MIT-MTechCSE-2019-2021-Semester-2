@@ -1,0 +1,10 @@
+C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\clientapp\clientapp\bin\Debug\clientapp.exe
+C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\clientapp\clientapp\bin\Debug\clientapp.pdb
+C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\clientapp\clientapp\obj\Debug\clientapp.csprojAssemblyReference.cache
+C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\clientapp\clientapp\obj\Debug\clientapp.Form1.resources
+C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\clientapp\clientapp\obj\Debug\clientapp.Properties.Resources.resources
+C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\clientapp\clientapp\obj\Debug\clientapp.csproj.GenerateResource.cache
+C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\clientapp\clientapp\obj\Debug\clientapp.csproj.CoreCompileInputs.cache
+C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\clientapp\clientapp\obj\Debug\clientapp.exe
+C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\clientapp\clientapp\obj\Debug\clientapp.pdb
+C:\Users\IT\Documents\Git\MIT-MTechCSE-2019-2021-Semester-2\Web Services\lab\clientapp\clientapp\bin\Debug\clientapp.exe.config
