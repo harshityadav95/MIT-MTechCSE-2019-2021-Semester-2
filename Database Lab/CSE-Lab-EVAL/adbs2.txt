@@ -1,0 +1,39 @@
+ select name from instructor where salary>=60000 and dept_name='History';
+
+
+ select student.id,student.name from student,instructor,advisor
+  2  where student.id=advisor.s_id
+  3  and advisor.i_id=instructor.id
+  4  and instructor.name='Srinivasan';
+
+
+
+select course.course_id from course,section
+  2  where course.course_id=section.course_id
+  3  and section.semester='Fall' and section.year=2009
+  4  minus
+  5  (select course.course_id from course,section
+  6  where course.course_id=section.course_id
+  7  and section.semester='Spring' and section.year=2010);
+
+
+
+
+
+ select course.course_id from course
+  2  where course_id not in
+  3  (select course.course_id from course,prereq
+  4  where course.course_id=prereq.course_id);
+
+
+6 rows selected.
+
+
+
+create view v as
+  2  select course.course_id,course.title,course.credits,section.sec_id,section.building,section.room_number from course,section
+  3  where course.course_id=section.course_id
+  4  and course.dept_name='Comp. Sci.'
+  5  and section.semester='Fall'
+  6  and section.year=2009;
+
