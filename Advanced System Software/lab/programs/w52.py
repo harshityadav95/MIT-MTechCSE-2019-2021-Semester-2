@@ -21,33 +21,19 @@ def generate_tokens(pattern, text):
             yield token
 
 class ExpressionEvaluator:
-    '''
-    Implementation of a recursive descent parser.
-
-    Each method implement a single grammar rule.
-    It walks from left to right over grammar rule.
-    It either consume the rule a generate a syntax error
-
-    Use the ._accept() method to test and accept look ahead token.
-    Use the ._expect() method to exactly match and discard the next token on the input.
-        or raise a SyntaxError if it doesn't match
-    '''
 
     def parse(self, text):
         self.tokens = generate_tokens(master_pattern, text)
         self.current_token = None
         self.next_token = None
         self._advance()
-
-        # expr is the top level grammar. So we invoke that first.
-        # it will invoke other function to consume tokens according to grammar rule.
         return self.expr()
 
     def _advance(self):
         self.current_token, self.next_token = self.next_token, next(self.tokens, None)
 
     def _accept(self, token_type):
-        # if there is next token and token type matches
+
         if self.next_token and self.next_token.type == token_type:
             self._advance()
             return True
@@ -59,18 +45,11 @@ class ExpressionEvaluator:
             raise SyntaxError('Expected ' + token_type)
 
     def expr(self):
-        '''
-        expression ::= term { ( + ) term } *
-        '''
-
-        # it first expect a term according to grammar rule
         expr_value = self.term()
 
-        # then if it's either + or -, we try to consume the right side
-        #
-        # If it's not + or -, then it is treated as no right side
+     
         while self._accept('PLUS'):
-            # get the operation, + or -
+            
             op = self.current_token.type
 
             right = self.term()
@@ -82,16 +61,10 @@ class ExpressionEvaluator:
         return expr_value
 
     def term(self):
-        '''
-        term    ::= factor { ('*') factor } *
-        '''
-
-        # it first expect a factor
+      
         term_value = self.factor()
 
-        # then if it's either * or /, we try to consume the right side
-        #
-        # If it's not + or -, then it is treated as no right side
+  
         while self._accept('TIMES'):
             op = self.current_token.type
 
@@ -103,48 +76,25 @@ class ExpressionEvaluator:
         return term_value
 
     def factor(self):
-        '''
-        factor  ::= NUM | (expr)
+       
 
-        '''
-
-        # it can be a number
         if self._accept('NUM'):
             return int(self.current_token.value)
-        # or (expr)
+
         elif self._accept('LPAREN'):
-            # we consumed ( in previous _accept
-            #
-            # then we try to evaluate the expr, and store the value
+     
             expr_value = self.expr()
 
-            # then it should be ), otherwise raise an exception
+     
             self._expect('RPAREN')
 
-            # return the previous saved value
+           
             return expr_value
         else:
             raise SyntaxError('Expect NUMBER or LPAREN')
 
-
 e = ExpressionEvaluator()
-
 a = input("Enter the expression:")
 print('parse '+a.ljust(just_len),
       e.parse(a))
-# print('parse 2'.ljust(just_len),
-#       e.parse('2'))
 
-# print('parse 2 + 3'.ljust(just_len),
-#       e.parse('2 + 3'))
-# print('parse 2 + 3 * 4'.ljust(just_len),
-#       e.parse('2 + 3 * 4'))
-
-# print('parse (2 + 3) * 4'.ljust(just_len),
-#       e.parse('(2 + 3) * 4'))
-
-# print('parse (2 + 3) * (4 + 5)'.ljust(just_len),
-#       e.parse('(2 + 3) * (4 + 5)'))
-
-# print('parse 2 + 3 * 4 + 5'.ljust(just_len),
-#       e.parse('2 + 3 * 4 + 5'))
