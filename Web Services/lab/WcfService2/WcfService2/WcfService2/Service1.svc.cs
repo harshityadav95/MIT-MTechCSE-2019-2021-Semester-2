@@ -5,23 +5,28 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
-using WcfService1.Models;
+using WcfService2.Models;
 
-
-namespace WcfService1
+namespace WcfService2
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public GetResultResponse GetResult(string registerNo, int semester, string term)
+        public GetCabDetailsResponse GetCabDetails(int latitude, int longitude)
         {
-            GetResultResponse response = new GetResultResponse();
-            response.registerNo = registerNo;
-            response.name = "ABC";
-            response.grade = "A+";
+            GetCabDetailsResponse response
+                = new GetCabDetailsResponse(1, DateTime.Now, "SUV");
             return response;
         }
 
-     }
+        public GetGradeResponse GetGradeWithCredentials(GetGradeRequest request)
+        {
+            var response = new GetGradeResponse();
+            response.RegisterNo = request.RegisterNo;
+            response.Name = "ABC";
+            response.Grade = "A+";
+            return response;
+        }
+    }
 }
