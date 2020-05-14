@@ -1,0 +1,11 @@
+The portion for 3rd assignment are
+
+13 Cloud Models and Platforms
+
+                14 Microservices
+
+Portion for 4th Assignment is
+
+                15 Web Service Security
+
+                16 Building ReST API using Python

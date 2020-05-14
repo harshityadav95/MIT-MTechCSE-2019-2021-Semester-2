@@ -1,0 +1,35 @@
+To Create Donor
+URL : http://rodavid20.pythonanywhere.com/api/v1/donors
+Method : POST
+Body : raw JSON
+{
+	"id" : -1,
+	"name" : "ABC",
+    "bloodType" : "A+",
+    "birthDate" : "1985-12-12",
+    "phoneNumber" : 12345
+}
+
+To get all Donors
+URL : http://rodavid20.pythonanywhere.com/api/v1/donors
+Method: GET
+
+To get Donor with particular id
+URL : http://rodavid20.pythonanywhere.com/api/v1/donors/1
+Method: GET
+
+To Create Donation
+URL : http://rodavid20.pythonanywhere.com/api/v1/donations
+Method : POST
+Body : raw JSON
+{
+	"id" : -1,
+	"donationDate" : "2020-04-12",
+    "location" : "UDUPI",
+	"notes" : "Blood Camp",
+	"donorIds" : [1]
+}
+
+To get all Donations
+URL : http://rodavid20.pythonanywhere.com/api/v1/donations
+Method: GET

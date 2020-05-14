@@ -1,0 +1,14 @@
+DROP TABLE Donor;
+CREATE TABLE Donor (	id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,	name VARCHAR(255),	bloodType VARCHAR(10),	birthDate DATETIME,	phoneNumber VARCHAR(255));	
+DROP TABLE Donation;
+CREATE TABLE Donation (
+	id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	donationDate DATETIME,
+	location  VARCHAR(255),
+	notes  VARCHAR(1000));
+	
+DROP TABLE Donates;
+CREATE TABLE Donates (
+	donorId INT(11) REFERENCES Donor,
+	donationId INT(11) REFERENCES Donation);
+	
