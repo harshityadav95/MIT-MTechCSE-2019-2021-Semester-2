@@ -4,13 +4,13 @@ from datetime import datetime
 
 from flask_sqlalchemy import SQLAlchemy
 
-secretKey = "Pass@111" #os.getenv("SECRET_KEY")
+secretKey = "21@Century" #os.getenv("SECRET_KEY")
 
 SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}".format(
-    username="rodavid20",
+    username="cse17",
     password=secretKey,
-    hostname="rodavid20.mysql.pythonanywhere-services.com",
-    databasename="rodavid20$default",
+    hostname="cse17.mysql.pythonanywhere-services.com",
+    databasename="cse17$default",
 )
 
 app = Flask(__name__)

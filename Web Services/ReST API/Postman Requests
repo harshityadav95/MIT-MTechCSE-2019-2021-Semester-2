@@ -1,5 +1,5 @@
 To Create Donor
-URL : http://rodavid20.pythonanywhere.com/api/v1/donors
+URL : http://cse17.pythonanywhere.com/api/v1/donors
 Method : POST
 Body : raw JSON
 {
@@ -11,15 +11,15 @@ Body : raw JSON
 }
 
 To get all Donors
-URL : http://rodavid20.pythonanywhere.com/api/v1/donors
+URL : http://cse17.pythonanywhere.com/api/v1/donors
 Method: GET
 
 To get Donor with particular id
-URL : http://rodavid20.pythonanywhere.com/api/v1/donors/1
+URL : http://cse17.pythonanywhere.com/api/v1/donors/1
 Method: GET
 
 To Create Donation
-URL : http://rodavid20.pythonanywhere.com/api/v1/donations
+URL : http://cse17.pythonanywhere.com/api/v1/donations
 Method : POST
 Body : raw JSON
 {
@@ -31,5 +31,5 @@ Body : raw JSON
 }
 
 To get all Donations
-URL : http://rodavid20.pythonanywhere.com/api/v1/donations
+URL : http://cse17.pythonanywhere.com/api/v1/donations
 Method: GET
