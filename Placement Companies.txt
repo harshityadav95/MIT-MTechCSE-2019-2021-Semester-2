@@ -7,3 +7,8 @@ Infenion Technologies
 Intel 
 Dell Technologies
 Netapp
+Optum 
+Nokia
+Oracle
+IBM
+
